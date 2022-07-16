@@ -407,7 +407,7 @@ nav h3:hover {
 }
 .slogan i {
 
-    color: #f5d547;
+    color: #333;
 }
 .slogan:before {
     content: '';
