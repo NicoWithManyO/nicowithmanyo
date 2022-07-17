@@ -234,14 +234,17 @@ html, body {
     box-sizing: border-box;
 }
 p {
-    max-width: 750px;
+    max-width: 550px;
+    text-align: justify;
+    line-height: 22px;
+    ;
 }
 
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px 0;
+    gap: 0px 0;
 }
 
 .intro .left, .intro .right {
@@ -254,7 +257,7 @@ header {
     gap: 0 100px;
     justify-content: space-around;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 .cmd {
     color: grey;
@@ -276,8 +279,11 @@ header .right {
 }
 .intro .right {
     box-shadow: -4px 0 0 0 #f5d547;
-}
 
+}
+.intro .right h3 {
+    color: #4692ef;
+}
 .intro {
     display: flex;
     width: 100%;
@@ -327,6 +333,7 @@ header .right {
     align-items: flex-end;
 }
 .pdp img {
+    height: 150px;
     border-radius: 50%;
     border: 6px solid #4692ef;
     transition: box-shadow .5s ease-in-out;
@@ -392,7 +399,13 @@ nav h3:hover {
     border-radius: 15px;
     color: grey;
 }
-
+.cancel {
+    text-decoration: line-through;
+}
+.tiny {
+    font-size: .8em;
+    text-align: right;
+}
 .cta {
     padding: 10px 30px;
     border: none;
@@ -401,7 +414,7 @@ nav h3:hover {
     color: #4692ef;
     border: 4px solid #f5d547;
     font-weight: bold;
-    border-radius: 30px 0 0 30px ;
+    /* border-radius: 30px 0 0 30px ; */
     transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out, color .3s ease-in-out, border-radius .1s ease-in-out;
     /* position: absolute; */
 }
@@ -409,7 +422,7 @@ nav h3:hover {
     color: black;
     border-color: #4692ef;
     box-shadow: inset 200px 0 0 0 #4692ef, inset -200px 0 0 0 #f5d547;
-    border-radius: 0 30px 30px 0;
+    /* border-radius: 0 30px 30px 0; */
 }
 .cta:after {
     text-align: right;
@@ -457,18 +470,16 @@ footer {
     display: flex;
     width: 100%;
     align-items: flex-start;
-    transition: .3s ease-in-out box-shadow;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition: color .3s ease-in-out;
     flex-wrap: wrap-reverse;
-    gap: 0 100px;
+    gap: 50px 100px;
+    color: grey;
 }
 footer h3 {
-    box-shadow: 0 2px 0 0 #f5d547;
-    transition: color .3s ease-in-out,
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 footer:hover {
-    color: black;
-    box-shadow: inset 0 -550px 0 0 #f5d547;
+    color: white;
 }
 footer:hover h3 {
     box-shadow: 0 2px 0 0 #4692ef
